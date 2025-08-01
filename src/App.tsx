@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // Import React Router tools for client-side routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './pages/Navbar';
 
 // Destructure the Content layout component from Ant Design's Layout
 const { Content } = Layout;
@@ -21,6 +22,7 @@ const App = () => {
     // React Query provider: makes server state accessible throughout the app
     <QueryClientProvider client={queryClient}>
       {/* React Router provider: enables client-side routing */}
+   
       <BrowserRouter>
         {/* All the visual content and routes are handled in this component */}
         <AppContent />
@@ -37,6 +39,7 @@ const AppContent = () => {
     // Ant Design layout with full viewport height
     <Layout style={{ minHeight: '100vh' }}>
       {/* Main page content area */}
+         <Navbar/>
       <Content>
         {/* Define all routes inside Routes */}
         <Routes>
