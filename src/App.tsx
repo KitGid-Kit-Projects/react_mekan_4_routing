@@ -11,6 +11,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/LoginPage';
+import DashboardPage from './pages/DashboardPage';
 
 // Destructure the Content layout component from Ant Design's Layout
 const { Content } = Layout;
@@ -54,7 +55,11 @@ const AppContent = () => {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<LoginPage />} />
          
-
+  {/* Dashboard with Nested Routes */}
+          <Route path="/dashboard" element={<DashboardPage />}>
+            {/* <Route path="profile" element={<ProfilePage />} />
+            <Route path="settings" element={<SettingsPage />} /> */}
+          </Route>
           {/* Catch-all route (404 page) - Add this last */}
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>
