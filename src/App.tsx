@@ -7,6 +7,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // Import React Router tools for client-side routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './pages/Navbar';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import LoginPage from './pages/LoginPage';
 
 // Destructure the Content layout component from Ant Design's Layout
 const { Content } = Layout;
@@ -43,12 +47,13 @@ const AppContent = () => {
       <Content>
         {/* Define all routes inside Routes */}
         <Routes>
-          {/* 
-            You can define static routes like:
+          
+            {/* You can define static routes like: */}
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-          */}
+            <Route path="/login" element={<LoginPage />} />
+         
 
           {/* Catch-all route (404 page) - Add this last */}
           {/* <Route path="*" element={<NotFoundPage />} /> */}
