@@ -16,6 +16,7 @@ import ProfilePage from './pages/ProfilePage';
 import NotFound from './pages/NotFound';
 import SettingsPage from './pages/SettingsPage';
 import QuestionsPage from './pages/QuestionsPage';
+import QuestionDetailPage from './pages/QuestionDetailPage';
 
 // Destructure the Content layout component from Ant Design's Layout
 const { Content } = Layout;
@@ -67,7 +68,7 @@ const AppContent = () => {
 
                   {/* Questions CRUD Routes */}
           <Route path="/questions" element={<QuestionsPage />} />
-         {/*  <Route path="/questions/:id" element={<QuestionDetailPage />} /> */}
+          <Route path="/questions/:id" element={<QuestionDetailPage />} />
           {/* Catch-all route (404 page) - Add this last */}
           <Route path="*" element={<NotFound/>} />
         </Routes>
