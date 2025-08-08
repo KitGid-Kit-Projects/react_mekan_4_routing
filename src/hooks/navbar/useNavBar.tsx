@@ -23,11 +23,7 @@ export default function useNavBar() {
       icon: <InfoCircleOutlined />,
       label: <NavLink to="/about">About</NavLink>,
     },
-    {
-      key: '/contact',
-      icon: <ContactsOutlined />,
-      label: <NavLink to="/contact">Contact</NavLink>,
-    },
+
     {
       key: '/dashboard',
       icon: <DashboardOutlined />,
