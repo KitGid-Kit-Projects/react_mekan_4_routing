@@ -1,7 +1,5 @@
-import { useState } from 'react';
-import { Table, Button, Card, Typography, Space, Tag, Modal, Form, Input, Select, message, Popconfirm } from 'antd';
-import { PlusOutlined, EyeOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
-import { useNavigate } from 'react-router-dom';
+import { Table, Button, Card, Typography,  Modal, Form, Input, Select } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
 import useQuestionPage from '@/hooks/questionPage/useQuestionPage';
 
 const { Title, Paragraph } = Typography;
@@ -11,8 +9,7 @@ const { Option } = Select;
 
 const QuestionsPage = () => {
 
-const {navigate,form,questions, setQuestions,isModalVisible, setIsModalVisible,editingQuestion, setEditingQuestion,
-    getDifficultyColor,handleView,handleEdit,handleDelete,handleModalOk,handleModalCancel,showCreateModal,columns
+const {form,questions, isModalVisible,editingQuestion,handleModalOk,handleModalCancel,showCreateModal,columns
 }=useQuestionPage()
   return (
     <div style={{ padding: '24px' }}>
