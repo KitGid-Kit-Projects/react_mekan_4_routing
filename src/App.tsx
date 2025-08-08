@@ -16,7 +16,7 @@ const queryClient = new QueryClient();
 
 // Main App component - wraps everything with context providers
 const App = () => {
-  console.log('App component rendering'); // Debug log
+
 
   return (
     // React Query provider: makes server state accessible throughout the app
