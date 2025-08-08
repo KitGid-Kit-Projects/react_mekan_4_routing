@@ -51,7 +51,6 @@ const AppContent = () => {
             {/* You can define static routes like: */}
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<LoginPage />} />
          
 
