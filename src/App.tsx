@@ -8,7 +8,6 @@ import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
-import SettingsPage from "./pages/SettingsPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import QuestionDetailPage from "./pages/QuestionDetailPage";
 import NotFound from "./pages/NotFound";
@@ -46,7 +45,6 @@ const AppContent = () => {
           {/* Dashboard with Nested Routes */}
           <Route path="/dashboard" element={<DashboardPage />}>
             <Route path="profile" element={<ProfilePage />} />
-            <Route path="settings" element={<SettingsPage />} />
           </Route>
           
           {/* Questions CRUD Routes */}

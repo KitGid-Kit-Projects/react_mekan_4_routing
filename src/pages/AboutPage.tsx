@@ -1,25 +1,13 @@
+import { useAboutData } from '@/hooks/AboutPage/useAboutData';
 import { Card, Typography, Row, Col, Tag } from 'antd';
 import { useLocation } from 'react-router-dom';
+
 
 const { Title, Paragraph } = Typography;
 
 const AboutPage = () => {
   const location = useLocation();
-
-  const technologies = [
-    'React 18+', 'React Router DOM v6+', 'Ant Design', 'TypeScript', 
-    'Vite', 'Modern Hooks', 'Functional Components'
-  ];
-
-  const routingFeatures = [
-    'Static Routes (/about, /contact)',
-    'Dynamic Routes (/questions/:id)',
-    'Nested Routes (/dashboard/profile)',
-    'Protected Routes (Dashboard)',
-    'Route Parameters (useParams)',
-    'Navigation (useNavigate)',
-    'Location State (useLocation)'
-  ];
+  const { technologies, routingFeatures, learningObjectives } = useAboutData();
 
   return (
     <div style={{ padding: '24px' }}>
@@ -31,6 +19,7 @@ const AboutPage = () => {
           modern React development patterns, particularly focusing on routing with React Router DOM v6+.
         </Paragraph>
 
+        {/* Current Route Info */}
         <Title level={2}>Current Route Information</Title>
         <Card size="small" style={{ marginBottom: '24px', backgroundColor: '#f0f2f5' }}>
           <p><strong>Current Path:</strong> {location.pathname}</p>
@@ -38,6 +27,7 @@ const AboutPage = () => {
           <p><strong>State:</strong> {location.state ? JSON.stringify(location.state) : 'None'}</p>
         </Card>
 
+        {/* Technologies & Routing Features */}
         <Row gutter={[24, 24]}>
           <Col xs={24} lg={12}>
             <Title level={3}>Technologies Used</Title>
@@ -62,17 +52,13 @@ const AboutPage = () => {
           </Col>
         </Row>
 
+        {/* Learning Objectives */}
         <Title level={3}>Learning Objectives</Title>
-        <Paragraph>
-          By exploring this application, you will understand:
-        </Paragraph>
+        <Paragraph>By exploring this application, you will understand:</Paragraph>
         <ul>
-          <li>How to set up React Router DOM v6+ with modern syntax</li>
-          <li>Implementing nested routes with Outlet components</li>
-          <li>Using React Router hooks (useNavigate, useParams, useLocation)</li>
-          <li>Building CRUD operations with local state management</li>
-          <li>Creating protected routes and navigation guards</li>
-          <li>Integrating Ant Design with React Router for beautiful UIs</li>
+          {learningObjectives.map((objective, index) => (
+            <li key={index}>{objective}</li>
+          ))}
         </ul>
       </Card>
     </div>
