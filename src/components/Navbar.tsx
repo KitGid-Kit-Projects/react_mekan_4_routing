@@ -1,6 +1,6 @@
 import { Menu, Layout } from 'antd';
 import { NavLink, useLocation } from 'react-router-dom';
-import { HomeOutlined, InfoCircleOutlined, ContactsOutlined, DashboardOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { HomeOutlined, InfoCircleOutlined, DashboardOutlined } from '@ant-design/icons';
 
 const { Header } = Layout;
 
