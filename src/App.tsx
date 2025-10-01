@@ -11,6 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import QuestionsPage from "./pages/QuestionsPage";
 import QuestionDetailPage from "./pages/QuestionDetailPage";
 import NotFound from "./pages/NotFound";
+import SettingsPage from './pages/SettingsPage';
 
 const { Content } = Layout;
 
@@ -39,17 +40,15 @@ const AppContent = () => {
           {/* Static Routes */}
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
           
           {/* Dashboard with Nested Routes */}
           <Route path="/dashboard" element={<DashboardPage />}>
             <Route path="profile" element={<ProfilePage />} />
+            <Route path="settings" element={<SettingsPage />} />
           </Route>
           
-          {/* Questions CRUD Routes */}
-          <Route path="/questions" element={<QuestionsPage />} />
-          <Route path="/questions/:id" element={<QuestionDetailPage />} />
+        
           
           {/* Catch-all route for 404 */}
           <Route path="*" element={<NotFound />} />
