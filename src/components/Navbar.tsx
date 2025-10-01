@@ -18,21 +18,13 @@ const Navbar = () => {
       icon: <InfoCircleOutlined />,
       label: <NavLink to="/about">About</NavLink>,
     },
-    {
-      key: '/contact',
-      icon: <ContactsOutlined />,
-      label: <NavLink to="/contact">Contact</NavLink>,
-    },
+
     {
       key: '/dashboard',
       icon: <DashboardOutlined />,
       label: <NavLink to="/dashboard">Dashboard</NavLink>,
     },
-    {
-      key: '/questions',
-      icon: <QuestionCircleOutlined />,
-      label: <NavLink to="/questions">Questions</NavLink>,
-    },
+
   ];
 
   return (
