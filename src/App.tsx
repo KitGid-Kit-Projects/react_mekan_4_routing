@@ -58,20 +58,16 @@ const AppContent = () => {
           <Route path="/" element={<HomePage />} />
           {/* About route - renders AboutPage at /about */}
           <Route path="/about" element={<AboutPage />} />
-          {/* Login route - renders LoginPage at /login */}
-          <Route path="/login" element={<LoginPage />} />
           
           {/* Dashboard with Nested Routes */}
           {/* Dashboard base route - DashboardPage renders and may host nested routes */}
           <Route path="/dashboard" element={<DashboardPage />}>
             {/* Nested profile route under /dashboard/profile */}
-            <Route path="profile" element={<ProfilePage />} />
+            <Route path="profile" element={<h1 style={{margin:"20px", fontSize:"28px"}}>Profile Page</h1>} />
             {/* Nested settings route under /dashboard/settings */}
-            <Route path="settings" element={<SettingsPage />} />
+            <Route path="settings" element={<h1 style={{margin:"20px", fontSize:"28px"}}>Settings Page</h1>} />
           </Route>
 
-          {/* Catch-all route for 404 - any unmatched URL will render NotFound */}
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Content>
     </Layout>
