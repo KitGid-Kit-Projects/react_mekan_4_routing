@@ -1,16 +1,29 @@
+// Import UI building blocks from Ant Design
 import { Card, Typography, Tag } from 'antd';
+// NavLink used for creating in-app links to nested dashboard routes
 import { NavLink } from 'react-router-dom';
 
+// Destructure common Typography components for convenience
 const { Title, Paragraph } = Typography;
 
+// DashboardOverview component
+// Props:
+// - location: react-router location object (pathname, search, state)
+// - loginState: optional object with login details passed from the login flow
 const DashboardOverview = ({ location, loginState }) => {
   return (
     <div>
+      {/* Page header */}
       <Title level={2}>Dashboard Overview</Title>
 
+      {/*
+        If loginState exists, show a welcome card with details.
+        This demonstrates passing state between routes and conditional rendering.
+      */}
       {loginState && (
         <Card style={{ marginBottom: '24px', backgroundColor: '#f6ffed' }}>
           <Title level={4}>
+            {/* Greet the user by name and show a green 'Logged In' tag */}
             Welcome, {loginState.user}! <Tag color="green">Logged In</Tag>
           </Title>
           <Paragraph>
@@ -22,10 +35,15 @@ const DashboardOverview = ({ location, loginState }) => {
         </Card>
       )}
 
+      {/* Card showing the current route information from the location object */}
       <Card title="Current Route Information" style={{ marginBottom: '24px' }}>
         <p><strong>Current Path:</strong> {location.pathname}</p>
         <p><strong>Search Params:</strong> {location.search || 'None'}</p>
         <p><strong>Has State:</strong> {location.state ? 'Yes' : 'No'}</p>
+        {/*
+          If location.state exists, render a details block with the pretty-printed JSON
+          so developers/users can inspect what was passed via navigation state.
+        */}
         {location.state && (
           <details style={{ marginTop: '12px' }}>
             <summary style={{ cursor: 'pointer', fontWeight: 'bold' }}>
@@ -44,6 +62,7 @@ const DashboardOverview = ({ location, loginState }) => {
         )}
       </Card>
 
+      {/* Card that explains the dashboard features and provides quick links */}
       <Card title="Dashboard Features">
         <Paragraph>
           This dashboard demonstrates several important React Router concepts:
