@@ -9,14 +9,6 @@
 | 5   |         │   └── useHomeFeatures    | 24              | src/hooks/Home/useHomeFeatures.tsx                       |
 | 6   |         ├── AboutPage              | 56              | src/pages/AboutPage.tsx                                  |
 | 7   |         │   └── useAboutData       | 32              | src/hooks/AboutPage/useAboutData.tsx                     |
-| 8   |         ├── ContactPage            | 27              | src/pages/ContactPage.tsx                                |
-| 9   |         │   ├── useContactData     | 36              | src/hooks/ContactPage/useContactData.tsx                 |
-| 10  |         │   ├── ContactInfo        | 44              | src/components/ContactPage/ContactInfo.tsx               |
-| 11  |         │   └── ContactForm        | 54              | src/components/ContactPage/ContactForm.tsx               |
-| 12  |         ├── LoginPage              | 27              | src/pages/LoginPage.tsx                                  |
-| 13  |         │   ├── useLoginData       | 44              | src/hooks/LoginPage/useLoginData.tsx                     |
-| 14  |         │   ├── LoginForm          | 61              | src/components/LoginPage/LoginForm.tsx                   |
-| 15  |         │   └── LoginInfo          | 25              | src/components/LoginPage/LoginInfo.tsx                   |
 | 16  |         ├── DashboardPage          | 36              | src/pages/DashboardPage.tsx                              |
 | 17  |         │   ├── useDashboardData   | 32              | src/hooks/DashboardPage/useDashboardData.tsx             |
 | 18  |         │   ├── DashboardOverview  | 74              | src/components/DashboardPage/DashboardOverview.tsx       |
