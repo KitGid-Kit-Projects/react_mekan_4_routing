@@ -4,12 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
-import QuestionsPage from "./pages/QuestionsPage";
-import QuestionDetailPage from "./pages/QuestionDetailPage";
 import NotFound from "./pages/NotFound";
 import SettingsPage from './pages/SettingsPage';
 
