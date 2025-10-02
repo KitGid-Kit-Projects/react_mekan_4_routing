@@ -8,12 +8,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // Import page components used by the route table
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import LoginPage from "./pages/LoginPage";
-import DashboardPage from "./pages/DashboardPage";
-import ProfilePage from "./pages/ProfilePage";
-import NotFound from "./pages/NotFound";
-import SettingsPage from './pages/SettingsPage';
 
 // Destructure Content from the Layout object provided by antd
 const { Content } = Layout;
@@ -57,21 +51,10 @@ const AppContent = () => {
           {/* Home route - renders HomePage at root path */}
           <Route path="/" element={<HomePage />} />
           {/* About route - renders AboutPage at /about */}
-          <Route path="/about" element={<AboutPage />} />
-          {/* Login route - renders LoginPage at /login */}
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/about" element={<h1 style={{margin:"20px",fontSize:"28px"}}>About Page</h1>} />
           
-          {/* Dashboard with Nested Routes */}
-          {/* Dashboard base route - DashboardPage renders and may host nested routes */}
-          <Route path="/dashboard" element={<DashboardPage />}>
-            {/* Nested profile route under /dashboard/profile */}
-            <Route path="profile" element={<ProfilePage />} />
-            {/* Nested settings route under /dashboard/settings */}
-            <Route path="settings" element={<SettingsPage />} />
-          </Route>
+          <Route path="/dashboard" element={<h1 style={{margin:"20px",fontSize:"28px"}}>Dashboard Page</h1>}/>
 
-          {/* Catch-all route for 404 - any unmatched URL will render NotFound */}
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Content>
     </Layout>
