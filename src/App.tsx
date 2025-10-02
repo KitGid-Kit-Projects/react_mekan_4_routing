@@ -9,8 +9,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './pages/Navbar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 
 // Destructure the Content layout component from Ant Design's Layout
@@ -52,7 +50,6 @@ const AppContent = () => {
             {/* You can define static routes like: */}
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/login" element={<LoginPage />} />
          
   {/* Dashboard with Nested Routes */}
           <Route path="/dashboard" element={<DashboardPage />}>
