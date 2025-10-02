@@ -67,11 +67,9 @@ const AppContent = () => {
             {/* Nested profile route under /dashboard/profile */}
             <Route path="profile" element={<ProfilePage />} />
             {/* Nested settings route under /dashboard/settings */}
-            <Route path="settings" element={<SettingsPage />} />
+            <Route path="settings" element={<h1 style={{margin:"20px", fontSize:"28px"}}>Settings Page</h1>} />
           </Route>
 
-          {/* Catch-all route for 404 - any unmatched URL will render NotFound */}
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Content>
     </Layout>

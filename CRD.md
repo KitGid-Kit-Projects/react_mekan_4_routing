@@ -19,11 +19,7 @@
 | 15  |         │   ├── ProfileForm        | 61              | ./src/components/ProfilePage/ProfileForm.tsx             |
 | 16  |         │   ├── ProfileInfo        | 44              | ./src/components/ProfilePage/ProfileInfo.tsx             |
 | 17  |         │   └── ProfileRouteInfo   | 27              | ./src/components/ProfilePage/ProfileRouteInfo.tsx        |
-| 18  |         ├── SettingsPage           | 38              | ./src/pages/SettingsPage.tsx                             |
-| 19  |         │   ├── useSettingsForm    | 32              | ./src/hooks/SettingsPage/useSettingsForm.tsx             |
-| 20  |         │   ├── RouteInfo          | 61              | ./src/components/SettingsPage/RouteInfo.tsx              |
-| 21  |         │   └── SettingsForm       | 77              | ./src/components/SettingsPage/SettingsForm.tsx           |
-| 22  |         └── NotFound               | 22              | ./src/pages/NotFound.tsx                                 |
+| 18  |         └── NotFound               | 22              | ./src/pages/NotFound.tsx                                 |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
-|     |                 TOTAL CODE LINES   | 1091            |                                                          |
+|     |                 TOTAL CODE LINES   | 643             |                                                          |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
