@@ -8,8 +8,6 @@ import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
-import QuestionsPage from "./pages/QuestionsPage";
-import QuestionDetailPage from "./pages/QuestionDetailPage";
 import NotFound from "./pages/NotFound";
 import SettingsPage from './pages/SettingsPage';
 
