@@ -13,13 +13,12 @@
 | 9   |         │   ├── useDashboardData   | 32              | ./src/hooks/DashboardPage/useDashboardData.tsx           |
 | 10  |         │   ├── DashboardOverview  | 74              | ./src/components/DashboardPage/DashboardOverview.tsx     |
 | 11  |         │   └── DashboardSidebar   | 28              | ./src/components/DashboardPage/DashboardSidebar.tsx      |
-| 12  |         ├── ProfilePage            | 38              | ./src/pages/ProfilePage.tsx                              |
-| 13  |         │   ├── useProfileData     | 32              | ./src/hooks/ProfilePage/useProfileData.tsx               |
-| 14  |         │   ├── ProfileAbout       | 27              | ./src/components/ProfilePage/ProfileAbout.tsx            |
-| 15  |         │   ├── ProfileForm        | 61              | ./src/components/ProfilePage/ProfileForm.tsx             |
-| 16  |         │   ├── ProfileInfo        | 44              | ./src/components/ProfilePage/ProfileInfo.tsx             |
-| 17  |         │   └── ProfileRouteInfo   | 27              | ./src/components/ProfilePage/ProfileRouteInfo.tsx        |
-| 18  |         └── NotFound               | 22              | ./src/pages/NotFound.tsx                                 |
+| 12  |         └── ProfilePage            | 38              | ./src/pages/ProfilePage.tsx                              |
+| 13  |             ├── useProfileData     | 32              | ./src/hooks/ProfilePage/useProfileData.tsx               |
+| 14  |             ├── ProfileAbout       | 27              | ./src/components/ProfilePage/ProfileAbout.tsx            |
+| 15  |             ├── ProfileForm        | 61              | ./src/components/ProfilePage/ProfileForm.tsx             |
+| 16  |             ├── ProfileInfo        | 44              | ./src/components/ProfilePage/ProfileInfo.tsx             |
+| 17  |             └── ProfileRouteInfo   | 27              | ./src/components/ProfilePage/ProfileRouteInfo.tsx        |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
-|     |                 TOTAL CODE LINES   | 643             |                                                          |
+|     |                 TOTAL CODE LINES   | 623             |                                                          |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
