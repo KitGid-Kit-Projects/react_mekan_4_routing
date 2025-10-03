@@ -7,8 +7,8 @@
 | 3   |     └── (Outlet → Routed)          |                 |                                                          |
 | 4   |         ├── HomePage               | 36              | ./src/pages/HomePage.tsx                                 |
 | 5   |         │   └── useHomeFeatures    | 24              | ./src/hooks/Home/useHomeFeatures.tsx                     |
-| 6   |         ├── AboutPage              | 56              | ./src/pages/AboutPage.tsx                                |
-| 7   |         │   └── useAboutData       | 32              | ./src/hooks/AboutPage/useAboutData.tsx                   |
+| 6   |         └── AboutPage              | 56              | ./src/pages/AboutPage.tsx                                |
+| 7   |             └── useAboutData       | 32              | ./src/hooks/AboutPage/useAboutData.tsx                   |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
 |     |                 TOTAL CODE LINES   | 222             |                                                          |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
