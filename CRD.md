@@ -9,11 +9,10 @@
 | 5   |         │   └── useHomeFeatures    | 24              | ./src/hooks/Home/useHomeFeatures.tsx                     |
 | 6   |         ├── AboutPage              | 56              | ./src/pages/AboutPage.tsx                                |
 | 7   |         │   └── useAboutData       | 32              | ./src/hooks/AboutPage/useAboutData.tsx                   |
-| 8   |         ├── DashboardPage          | 36              | ./src/pages/DashboardPage.tsx                            |
-| 9   |         │   ├── useDashboardData   | 32              | ./src/hooks/DashboardPage/useDashboardData.tsx           |
-| 10  |         │   ├── DashboardOverview  | 74              | ./src/components/DashboardPage/DashboardOverview.tsx     |
-| 11  |         │   └── DashboardSidebar   | 28              | ./src/components/DashboardPage/DashboardSidebar.tsx      |
-| 13  |         └── NotFound               | 22              | ./src/pages/NotFound.tsx                                 |
+| 8   |         └── DashboardPage          | 36              | ./src/pages/DashboardPage.tsx                            |
+| 9   |             ├── useDashboardData   | 32              | ./src/hooks/DashboardPage/useDashboardData.tsx           |
+| 10  |             ├── DashboardOverview  | 74              | ./src/components/DashboardPage/DashboardOverview.tsx     |
+| 11  |             └── DashboardSidebar   | 28              | ./src/components/DashboardPage/DashboardSidebar.tsx      |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
-|     |                 TOTAL CODE LINES   | 414             |                                                          |
+|     |                 TOTAL CODE LINES   | 392             |                                                          |
 |-----|------------------------------------|-----------------|----------------------------------------------------------|
