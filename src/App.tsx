@@ -9,12 +9,7 @@ import Navbar from "./components/Navbar";
 // Import page components used by the route table
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
-import ProfilePage from "./pages/ProfilePage";
-import NotFound from "./pages/NotFound";
-import SettingsPage from './pages/SettingsPage';
-
 // Destructure Content from the Layout object provided by antd
 const { Content } = Layout;
 
