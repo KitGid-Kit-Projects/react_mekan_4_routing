@@ -1,10 +1,10 @@
 // Import Profile-related components used on this nested dashboard route
-import ProfileAbout from '@/components/ProfilePage/ProfileAbout';
-import ProfileForm from '@/components/ProfilePage/ProfileForm';
-import ProfileInfo from '@/components/ProfilePage/ProfileInfo';
-import ProfileRouteInfo from '@/components/ProfilePage/ProfileRouteInfo';
+import ProfileAbout from '../components/ProfilePage/ProfileAbout';
+import ProfileForm from '../components/ProfilePage/ProfileForm';
+import ProfileInfo from '../components/ProfilePage/ProfileInfo';
+import ProfileRouteInfo from '../components/ProfilePage/ProfileRouteInfo';
 // Hook that provides form instance, user data and submit handler for the profile page
-import { useProfileData } from '@/hooks/ProfilePage/useProfileData';
+import { useProfileData } from '../hooks/ProfilePage/useProfileData';
 // Ant Design layout / typography primitives
 import { Typography, Row, Col } from 'antd';
 

@@ -1,8 +1,8 @@
 // Import the dashboard overview and sidebar components used in the dashboard layout
-import DashboardOverview from '@/components/DashboardPage/DashboardOverview';
-import DashboardSidebar from '@/components/DashboardPage/DashboardSidebar';
+import DashboardOverview from '../components/DashboardPage/DashboardOverview';
+import DashboardSidebar from '../components/DashboardPage/DashboardSidebar';
 // Hook that provides dashboard-specific data such as current location and menu items
-import { useDashboardData } from '@/hooks/DashboardPage/useDashboardData';
+import { useDashboardData } from '../hooks/DashboardPage/useDashboardData';
 // Ant Design Layout primitives
 import { Layout } from 'antd';
 // Outlet is used for nested routing inside the dashboard
