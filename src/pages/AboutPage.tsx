@@ -1,5 +1,5 @@
 // Import a hook that provides data used by the About page
-import { useAboutData } from '@/hooks/AboutPage/useAboutData';
+import { useAboutData } from '../hooks/AboutPage/useAboutData';
 // Import Ant Design components used to structure the content
 import { Card, Typography, Row, Col, Tag } from 'antd';
 // Import useLocation to display current route information for demo purposes
