@@ -1,8 +1,8 @@
 // Import the small RouteInfo panel and the form used on this settings page
-import RouteInfo from '@/components/SettingsPage/RouteInfo';
-import SettingsForm from '@/components/SettingsPage/SettingsForm';
+import RouteInfo from '../components/SettingsPage/RouteInfo';
+import SettingsForm from '../components/SettingsPage/SettingsForm';
 // Hook that provides loading state and submit handler for the settings form
-import { useSettingsForm } from '@/hooks/SettingsPage/useSettingsForm';
+import { useSettingsForm } from '../hooks/SettingsPage/useSettingsForm';
 // Ant Design layout and typography components
 import { Card, Typography, Row, Col } from 'antd';
 import { Form } from 'antd';

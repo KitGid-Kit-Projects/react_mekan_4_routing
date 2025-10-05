@@ -1,5 +1,5 @@
 // Import the custom hook that provides the home page features
-import { useHomeFeatures } from '@/hooks/Home/useHomeFeatures';
+import { useHomeFeatures } from '../hooks/Home/useHomeFeatures';
 // Import Ant Design UI components used on this page
 import { Card, Row, Col, Typography, Button } from 'antd';
 
